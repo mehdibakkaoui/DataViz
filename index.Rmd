@@ -1,0 +1,42 @@
+---
+title: "Visualisation"
+author: "Mehdi Bakkaoui"
+date: "12 avril 2019"
+output:
+  html_document:
+    toc: TRUE
+    code_folding: "hide"
+    number_sections: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, fig.align="center")
+```
+
+# Header 1 
+
+Table Header | Second Header
+-----------| -------------
+Table Cell  | Cell 2
+Cell 3  | Cell 4 
+
+```{r cars}
+summary(cars)
+```
+
+# Header 2
+
+You can also embed plots, for example:
+
+```{r pressure, echo=TRUE,message=FALSE}
+library(dygraphs)
+library(xts)
+data <- read.table("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered.csv", header=T)
+data$date <- as.Date(data$date)
+dygraph(xts(x = data$value, order.by = data$date))
+```
+
+
+<center>
+![figname](C:\Users\mehdi\Documents\Cours_et_TD\2IA\Bonnes pratiques logicielle\fleuret.jpeg)
+</center>
