@@ -17,8 +17,8 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE, fig.align="center")
 
 Table Header | Second Header
 -----------| -------------
-Table Cell  | Cell 2
-Cell 3  | Cell 4 
+Table VCell  | ParCell 2
+VariCell 3  | CarouCell 4 
 
 ```{r cars}
 summary(cars)
@@ -36,7 +36,3 @@ data$date <- as.Date(data$date)
 dygraph(xts(x = data$value, order.by = data$date))
 ```
 
-
-<center>
-![figname](C:\Users\mehdi\Documents\Cours_et_TD\2IA\Bonnes pratiques logicielle\fleuret.jpeg)
-</center>
